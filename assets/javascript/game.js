@@ -5,8 +5,8 @@ var gsLeft = document.getElementById("left");
 var gsFar = document.getElementById("guess");
 var winsScore = 0;
 var lossesScore = 0;
-var gsScore = 10;
-var overScore = 0;
+var gsScore = 9;
+var gameOver = false;
 
 
 document.onkeyup = function(event) {
@@ -14,20 +14,31 @@ var userGuess = event.key;
 var cpGuess = cpChoices[Math.floor(Math.random() * cpChoices.length)];
 
 if (userGuess === cpGuess) {
-    winsScore++;
+    winsScore++; 
 } else {
-    lossesScore++;
     gsScore--;
 }
-userWins.textContent = winsScore; 
-userLosses.textContent = lossesScore;
+userWins.textContent = winsScore;
 gsLeft.textContent = gsScore;
-}; 
 
-//     gsScore = 0;
-//     gameOver = true;
-// };
 
-// if the gsScore === 0, game is over
+if (gsScore === 0) {
+    lossesScore++;
+    reset(); 
+}
+userLosses.textContent = lossesScore;
+};
 
+
+function reset(){
+    gsScore = 9;
+    gsLeft.textContent = 9;
+}
+
+
+// the rules :
+// if userGuess === cpGuess, wins
+// if userGuess !== cpGuess, decrement gsLeft
+// if you don't have gsLeft, you lose
+// if you lose, increment the lossesScore and reset the game.
 
