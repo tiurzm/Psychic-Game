@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 100%;
+    font-size: 20px;
     margin: 0;
     background: #83a4d4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
@@ -13,19 +17,20 @@ h1 {
     padding: 20px;
     margin: 0;
     color: rgba(54, 7, 7, 0.836);
+    text-align: center;
 }
 
 p {
     padding: 15px;
     margin: 0;
-    border: 1px solid #ffe0e0;
+    border-top: 2px solid #ffe0e0;
 }
 
 .container {
     max-width: 650px;
     width: 100%;
-    margin: 100px;
-    border: 1px solid #ffe0e0;
+    margin: 100px auto;
+    border: 5px solid #ffe0e0;
 }
 
 

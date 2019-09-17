@@ -24,13 +24,11 @@ gsLeft.textContent = gsScore;
 
 if (gsScore === 0) {
     lossesScore++;
-    reset(); 
+    return reset(); 
 }
-userLosses.textContent = lossesScore;
+userLosses.textContent = lossesScore; 
 
 plus();
-
-
 };
 
 
@@ -56,4 +54,3 @@ function plus(){
 // if userGuess !== cpGuess, decrement gsLeft
 // if you don't have gsLeft, you lose
 // if you lose, increment the lossesScore and reset the game.
-
