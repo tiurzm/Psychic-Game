@@ -6,7 +6,7 @@ var gsFar = document.getElementById("guess");
 var winsScore = 0;
 var lossesScore = 0;
 var gsScore = 9;
-var gameOver = false;
+
 
 
 document.onkeyup = function(event) {
@@ -27,13 +27,28 @@ if (gsScore === 0) {
     reset(); 
 }
 userLosses.textContent = lossesScore;
+
+plus();
+
+
 };
 
 
 function reset(){
     gsScore = 9;
     gsLeft.textContent = 9;
-}
+    gsFar.textContent = "";
+};
+
+
+function plus(){
+    var newFarP = document.createElement("span");
+    userGuess = event.key;
+    userGuess = userGuess +", ";
+    newFarP.textContent = userGuess;
+    gsFar.appendChild(newFarP);
+};
+
 
 
 // the rules :
