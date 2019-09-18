@@ -21,13 +21,11 @@ if (userGuess === cpGuess) {
 userWins.textContent = winsScore;
 gsLeft.textContent = gsScore;
 
-
 if (gsScore === 0) {
     lossesScore++;
+    userLosses.textContent = lossesScore;
     return reset(); 
 }
-userLosses.textContent = lossesScore; 
-
 plus();
 };
 
@@ -37,7 +35,6 @@ function reset(){
     gsLeft.textContent = 9;
     gsFar.textContent = "";
 };
-
 
 function plus(){
     var newFarP = document.createElement("span");
