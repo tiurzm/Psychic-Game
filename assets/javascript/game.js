@@ -10,7 +10,7 @@ var gsScore = 9;
 
 
 document.onkeyup = function(event) {
-var userGuess = event.key; 
+var userGuess = event.key.toLowerCase();; 
 var cpGuess = cpChoices[Math.floor(Math.random() * cpChoices.length)];
 
 if (userGuess === cpGuess) {
@@ -38,7 +38,7 @@ function reset(){
 
 function plus(){
     var newFarP = document.createElement("span");
-    userGuess = event.key;
+    userGuess = event.key.toLowerCase();
     userGuess = userGuess +", ";
     newFarP.textContent = userGuess;
     gsFar.appendChild(newFarP);
