@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
     <title>psychicgame</title>
 </head>
 <body>
     <div class="container">
-        <h1>The Psychic Game</h1>
-        <p>Guess what letter I'm thinking of</p>
-        <p>Wins:<span id="wins"> 0</span></p>
-        <p>Losses:<span id="losses"> 0</span></p>
+        <h1><b>The Psychic Game</b></h1>
+        <p>Guess what letter I am thinking of</p>
+        <div class="together">
+            <p class="left">Wins:<span id="wins"> 0</span></p>
+            <p class="right">Losses:<span id="losses"> 0</span></p>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="clear"></div>
         <p>Guesses Left:<span id="left">9</span></p>
         <p>Your Guesses so far: <span id="guess"></span></p> 
     </div>

@@ -33,6 +33,7 @@ plus();
 function reset(){
     gsScore = 9;
     gsLeft.textContent = 9;
+    gsLeft = 9
     gsFar.textContent = "";
 };
 
