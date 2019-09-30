@@ -5,7 +5,11 @@
 body {
     font-size: 20px;
     margin: 0;
-    background: url(../images/hh.jpg) no-repeat center center fixed; 
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+        ), url(../images/hh.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
