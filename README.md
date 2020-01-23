@@ -2,7 +2,7 @@
 
 This is a Psychic Game application, built using HTML, CSS and javaScript.
 
-How to play:
+## How to play:
 
 1. Click https://tiurzm.github.io/Psychic-Game/.
 2. Press any key to get started.
